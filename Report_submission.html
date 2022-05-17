@@ -1,0 +1,106 @@
+<html>
+    <head>
+        <style>
+            
+            form{
+                width:300px;
+                margin:0 auto;
+            }
+            h1{
+                text-align : center;
+            }
+            body{
+                background-image: url('images/pencil.jpg');
+            }
+            li a:hover{
+background-color:#555;
+color:white;
+}
+            li a{
+display:block;
+color:#000;
+padding:20px 30px;
+text-decoration:none;
+}
+li{
+ float:left;
+}
+            #head{
+    list-style-type: none;
+     margin: 0;
+     padding: 0;
+    color:white;
+  padding: 10px 10px;
+}
+        </style>
+    </head>
+    <body>
+        <div style="width:1000px;height:150px;border:solid thin;margin:0px auto;">
+            <div style="width:150px;height:150px;border:solid thin;float:left;">
+            <img src="images/academy-logo.png"style="width:150px;height:150px;border-radius:50%;">
+            </div>
+            <div style="width:850px;height:150px;border:solid thin;margin-left:150px;">
+            <div style="text-align:center;font-size:90px;font-family:arial black;text-shadow:5px 5px dodgerblue;">
+                Academy Portal
+            </div>
+            </div>
+            <ul id="head">
+                <li><a href="page1.html">Home</a></li>
+                <li><a href="index.html">Logout</a></li>
+                
+            
+              </ul>
+        <h1>Report Submission</h1>
+        <form action="submit.html">
+            <table>
+                <tr>
+                    <td><label>Batch Code</label></td>
+                    <td><input type="text" name="Batch Code" placeholder="Enter the Code" required></td>
+                </tr>
+                <tr>
+                    <td><label>Faculty ID</label></td>
+                    <td><input type="text" name="Faculty ID" placeholder="Enter the ID" required></td>
+                </tr>
+                <tr> <td><label>Submitted Weekly Reports</label>
+                    <td><select>
+                      <option value="">5</option>
+                       <option value="">6  </option>
+                       <option value="">7</option>  </option></td>
+                    </select></td></tr>
+                    <tr> <td><label>Mock Tests Conducted</label>
+                        <td><select>
+                          <option value="">5</option>
+                           <option value="">6  </option>
+                           <option value="">7</option>  </option></td>
+                        </select></td></tr>
+                <tr>
+                    <td><label>BHS Report submitted</label>
+                        
+                    <td><input type="radio" id="YES" name="YES">
+                        <label>YES</label><br>
+                        
+                    <input type="radio" id ="NO" name="NO">
+                    <label>NO</label><br></td>
+                </tr>
+                <tr>
+                    <td><label>Innovation Project Title</label></td>
+                    <td><input type="text" name="Project title" placeholder="Enter the Project Title" required></td>
+                </tr>
+                <tr>
+                    <td><label>Innovation Project Description</label></td>
+                    <td><input type="text" name="Project Description" placeholder="Enter the Project Description" required></td>
+                </tr>
+                <tr> <td><label>Project Status</label>
+                    <td><select>
+                      <option value="">Completed</option>
+                       <option value="">Not Completed  </option>
+                       <option value="">In Progress</option>  </option></td>
+                    </select></td></tr>
+                <tr>
+                    <td><input type="reset"></td>
+                    <td colspan="2"><input type="submit" value="submit form"></td>
+                </tr>
+                </table>
+                </form>
+                </body>
+                </html>
